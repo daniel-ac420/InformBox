@@ -1,0 +1,14 @@
+:root {
+	--colorBlack: #000000;
+	--colorBlackAlternate: #3f3f3f;
+	
+	--colorWhite: #ffffff;
+	--colorWhiteAlternate: #fcfbfb;
+	
+	--colorGray: #e3e3e3;
+	--colorGrayAlternate: #9f9f9f;
+
+	--colorGreen: #547966;
+	--colorGreenLight: #8fffc6;
+	--colorGreenAlternate: #5eb086;
+}

@@ -1,0 +1,183 @@
+body, html {
+	height: 100%;
+	scroll-behavior: smooth; /* плавная прокрутка */
+}
+
+html {
+	position: relative; /* ↓ */
+	overflow-x: hidden; /* запрет прокрутки при открытии модальных окон */
+}
+
+body {
+	overflow-x: hidden; /* запрет прокрутки при открытии модальных окон */
+	height: auto; /* убирает дополнительный вертикальный у body, добавляемый предыдущим свойством */
+	color: var(--colorBlack); /* default color */
+	background-color: var(--colorWhite);
+	font-family: "Inter", Arial, sans-serif; /* all text */
+	font-size: 16px; /* default size */
+	font-weight: 400; 
+	line-height: 1.5;
+}
+
+.wrapper {
+	max-width: 1460px; /* +20px side padding */
+	margin: 0 auto;
+	padding: 0 10px;
+	flex-basis: 100%;
+}
+
+.wrapper_wide {
+	max-width: 1760px;
+}
+
+.wrapper--menu {
+	position: relative;
+}
+
+a {
+	display: inline-block;
+	text-decoration: unset;
+	line-height: normal;
+	color: inherit;
+	outline-style: solid;
+	outline-width: 2px;
+	outline-color: transparent;
+	outline-offset: 5px;
+	transition: all 0.75s;
+}
+
+a:hover {
+    border-bottom: 1px solid var(--colorBlack);
+    transform: scale(1.1);
+}
+
+a:focus {
+	border-radius: 10px;
+	outline-color: var(--colorWhiteAlternate);
+}
+
+.button {
+	display: inline-block;
+	width: auto;
+	padding: 0px 34px;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 2.81;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--colorWhite);
+	background-color: var(--colorGreen);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.75s;
+}
+
+.button:hover {
+	background-color: var(--colorGreenAlternate);
+}
+
+.button:focus {
+	outline: 2px solid var(--colorGreen);
+	outline-offset: 5px;
+}
+
+.button:focus:hover {
+	outline-color: var(--colorGreenAlternate);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 1366px) {
+	
+	.wrapper {
+		max-width: 1180px;
+	}
+		
+}
+/* ↑↑↑ 1366px ↑↑↑ */
+
+
+
+@media (max-width: 1280px) {
+	
+	.wrapper {
+		max-width: 1180px;
+	}
+		
+}
+/* ↑↑↑ 1280px ↑↑↑ */
+
+
+
+@media (max-width: 1180px) {
+	
+	.wrapper {
+		max-width: 1024px;
+	}
+		
+}
+/* ↑↑↑ 1180px ↑↑↑ */
+
+
+
+@media (max-width: 1024px) {
+	
+	.wrapper {
+		max-width: 980px;
+	}
+		
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 768px) {
+	
+	.wrapper {
+		max-width: 700px;
+	}
+		
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+
+
+@media (max-width: 534px) {
+	
+	body {
+		font-size: 12px;
+	}
+	
+	.wrapper {
+		max-width: 90%;
+	}
+	
+}
+/* ↑↑↑ 534px ↑↑↑ */
+
+
+
+@media (max-width: 320px) {
+	
+	.wrapper {
+		max-width: 95%;
+	}
+	
+}
+/* ↑↑↑ 320px ↑↑↑ */
